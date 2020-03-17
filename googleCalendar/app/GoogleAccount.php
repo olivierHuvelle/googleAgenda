@@ -4,6 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/*
+    I'll add the namespaces 
+*/
+
 class GoogleAccount extends Model
 {
     //
