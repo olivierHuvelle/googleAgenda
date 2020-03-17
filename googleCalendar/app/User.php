@@ -36,4 +36,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    //User --> *GoogleAccounts --> *Calendar --> *Event 
+    public function googleAccounts()
+    {
+        return $this->hasMany(GoogleAccount::class);
+    }
 }
