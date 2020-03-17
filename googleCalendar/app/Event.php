@@ -12,7 +12,7 @@ class Event extends Model
 
     public function calendar()
     {
-        return $this->belongsTo(Calendar::class);
+        return $this->belongsTo('App\Calendar'); //Calendar
     }
 
     public function getStartedAtAttribute($start)

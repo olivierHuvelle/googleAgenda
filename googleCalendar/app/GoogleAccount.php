@@ -16,11 +16,11 @@ class GoogleAccount extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo('App\User'); //vs User::class
     }
 
     public function calendars()
     {
-        return $this->hasMany(Calendar::class);
+        return $this->hasMany('App\Calendar'); //Calendar::class
     }
 }

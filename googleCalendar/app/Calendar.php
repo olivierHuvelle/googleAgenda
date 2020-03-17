@@ -11,11 +11,11 @@ class Calendar extends Model
 
     public function googleAccount()
     {
-        return $this->belongsTo(GoogleAccount::class); //versus 'App\GoogleAccount'
+        return $this->belongsTo('App\GoogleAccount'); //versus 'App\GoogleAccount'
     }
 
     public function events()
     {
-        return $this->hasMany(Event::class);
+        return $this->hasMany('App\Event');
     }
 }

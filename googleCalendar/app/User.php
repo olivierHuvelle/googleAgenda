@@ -40,6 +40,6 @@ class User extends Authenticatable
     //User --> *GoogleAccounts --> *Calendar --> *Event 
     public function googleAccounts()
     {
-        return $this->hasMany(GoogleAccount::class);
+        return $this->hasMany('App\GoogleAccount'); //GoogleAccount::class
     }
 }
